@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almustapha | Administrative & Digital Operations</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 15, 20, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 8% 80px;
+            background:
+                radial-gradient(circle at 80% 30%, #1c2a3a 0%, transparent 35%),
+                #0b0f14;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 8vw, 85px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #d4af37;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #b9c0c8;
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 14px 25px;
+            margin-right: 12px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #d4af37;
+            color: #0b0f14;
+        }
+
+        .secondary {
+            border: 1px solid #555;
+            color: white;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #9da5ae;
+            max-width: 650px;
+            margin-bottom: 45px;
+        }
+
+        .about {
+            background: #10161d;
+        }
+
+        .about-text {
+            max-width: 850px;
+            color: #c8ced5;
+            font-size: 18px;
+        }
+
+        .skills-grid,
+        .projects-grid,
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #121a22;
+            border: 1px solid #25303b;
+            border-radius: 16px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #d4af37;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #9da5ae;
+        }
+
+        .project-number {
+            color: #d4af37;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #10161d;
+        }
+
+        .contact p {
+            color: #aeb6bf;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav div:last-child {
+                display: none;
+            }
+
+            section {
+                padding: 80px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ALMUSTAPHA.</div>
+
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="tag">Administrative • Digital • Operations</div>
+
+        <h1>
+            Turning ideas into
+            <span>organized results.</span>
+        </h1>
+
+        <p>
+            I'm Almustapha, an Administrative & Digital Operations Professional
+            focused on business coordination, documentation, project support,
+            digital marketing and practical problem-solving.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="primary">View My Work</a>
+            <a href="#contact" class="secondary">Let's Connect</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p class="section-subtitle">
+        A professional journey built around adaptability, responsibility and continuous learning.
+    </p>
+
+    <p class="about-text">
+        My professional journey has taken me from driving and field operations
+        into administration, project coordination and business operations.
+        Along the way, I have developed practical experience in documentation,
+        staff supervision, procurement coordination, product registration support,
+        business communication and digital tools.
+        <br><br>
+        I enjoy solving practical problems, organizing information and helping
+        businesses turn everyday challenges into workable solutions.
+    </p>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <p class="section-subtitle">
+        Practical skills developed through real-world work and continuous learning.
+    </p>
+
+    <div class="skills-grid">
+
+        <div class="card">
+            <h3>Administration</h3>
+            <p>Documentation, coordination, records and daily business support.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Coordination</h3>
+            <p>Supporting projects, tracking tasks and coordinating people and resources.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Operations</h3>
+            <p>Helping businesses organize processes and solve operational problems.</p>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Excel</h3>
+            <p>Expense tracking, tables, calculations and business reporting.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>Content ideas, social media communication and digital promotion.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Tools</h3>
+            <p>Using AI tools to improve content, productivity and business workflows.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <p class="section-subtitle">
+        Selected examples of practical work and projects.
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <div class="project-number">01 — OPERATIONS</div>
+            <h3>Wavie Foods</h3>
+            <p>
+                Administrative and operations support including documentation,
+                staff coordination, procurement support and business organization.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="project-number">02 — EXCEL</div>
+            <h3>Expense Tracking System</h3>
+            <p>
+                Structured expense records designed to track money received,
+                spending and remaining balances clearly.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="project-number">03 — DIGITAL</div>
+            <h3>Digital Marketing</h3>
+            <p>
+                Developing social media content and digital marketing ideas
+                designed to help businesses communicate with customers.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="project-number">04 — WEB</div>
+            <h3>Portfolio Website</h3>
+            <p>
+                Designing and developing this personal portfolio website
+                using HTML and CSS.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">What I Can Do</h2>
+
+    <p class="section-subtitle">
+        Areas where I can provide practical support.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="card">
+            <h3>Administrative Support</h3>
+            <p>Organization, documentation and day-to-day business assistance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Virtual Assistance</h3>
+            <p>Online research, data organization and administrative tasks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>Social media support and content development.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Simple professional websites for individuals and small businesses.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <p>
+        I'm open to opportunities involving administration, digital operations,
+        project support, digital marketing and website development.
+    </p>
+
+    <a href="mailto:your-email@example.com" class="primary buttons"
+       style="display:inline-block;">
+        Contact Me
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Almustapha. All rights reserved.
+</footer>
+
+</body>
+</html>
